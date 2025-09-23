@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Lyro72.github.io/InstantFire.net",
   "name": "instant",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -27,3 +30,5 @@
     "vite": "^7.1.6"
   }
 }
+
+

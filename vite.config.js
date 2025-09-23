@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: '/InstantFire.net/', // <- Aquí pon el nombre de tu repo con slash al final
   plugins: [react()],
 })
+
