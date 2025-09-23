@@ -1,0 +1,157 @@
+.footer {
+  background-color: #1f2223;
+  color: #cfd1d2;
+  font-family: 'Arial', sans-serif;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.FooButton {
+  all: unset;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: inherit;
+}
+
+.footer-title {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+
+/* Línea verde a la izquierda de los botones del menú */
+.footer-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #28a745; /* Color verde */
+  opacity: 0; /* Inicialmente no visible */
+  transition: opacity 0.3s ease; /* Suavizado de la aparición */
+}
+
+/* Mostrar la línea verde al hacer hover */
+.footer-title:hover::before {
+  opacity: 1; /* La línea se hace visible */
+}
+
+.footer-title:hover {
+  border-left: 4px solid #28a745;
+  color: #28a745; /* Cambia el color del texto al verde */
+}
+
+.footer-description {
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: #cfd1d2;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-contact a {
+  color: #cfd1d2;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: white;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.footer-socials a {
+  background-color: #2e2f30;
+  color: #28a745; /* iconos en verde */
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+.footer-contact li svg,
+.footer-title svg {
+  color: #28a745;
+}
+
+/* Quick Links */
+.footer-links li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-links li:hover {
+  transform: translateX(5px);
+  color: white;
+}
+
+.footer-links li::before {
+  content: '➤';
+  color: #28a745;
+  margin-right: 8px;
+}

@@ -1,0 +1,77 @@
+/* Fondo parallax */
+.hero {
+  height: 100vh;
+   background: url("https://sdmntprcentralus.oaiusercontent.com/files/00000000-3b68-61f5-adbf-f4261e758e3a/raw?se=2025-09-23T01%3A56%3A10Z&sp=r&sv=2024-08-04&sr=b&scid=3b12055b-650e-5a6a-847c-9ae400490347&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-22T21%3A04%3A17Z&ske=2025-09-23T21%3A04%3A17Z&sks=b&skv=2024-08-04&sig=CNAF2VG3ztfHFc8Ow27rBC/kkykkcQsHaLerYVR5xsU%3D") 
+              no-repeat center center / cover;
+  background-attachment: fixed; /* efecto parallax */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.4); /* oscurece el fondo para dar contraste */
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.hero .subtitle {
+  font-size: 1.5rem;
+  color: #00a000;
+  margin-bottom: 20px;
+}
+
+/* Botones */
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  all: unset;              /* elimina todos los estilos por defecto */
+  display: inline-block;   /* lo tratamos como botón */
+  cursor: pointer;         /* cambia el cursor */
+  padding: 10px 20px;      /* espacio interno */
+  border-radius: 6px;      /* bordes suaves */
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Verde Bosque */
+.btn.green {
+  background: #1b5e20;   /* verde bosque profundo */
+  color: #fff;
+}
+
+.btn.green:hover {
+  background: #144d19;   /* verde más oscuro al pasar el mouse */
+}
+
+/* Outline */
+.btn.outline {
+  background: transparent;  /* fondo transparente */
+  border: 2px solid #fff;   /* borde blanco */
+  color: #fff;              /* texto blanco */
+}
+
+.btn.outline:hover {
+  background: rgba(255, 255, 255, 0.1); /* fondo sutil translúcido */
+}
+
+
