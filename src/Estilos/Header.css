@@ -1,8 +1,7 @@
 /* Fondo parallax */
 .hero {
   height: 100vh;
-   background: url("https://sdmntprcentralus.oaiusercontent.com/files/00000000-3b68-61f5-adbf-f4261e758e3a/raw?se=2025-09-23T01%3A56%3A10Z&sp=r&sv=2024-08-04&sr=b&scid=3b12055b-650e-5a6a-847c-9ae400490347&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-22T21%3A04%3A17Z&ske=2025-09-23T21%3A04%3A17Z&sks=b&skv=2024-08-04&sig=CNAF2VG3ztfHFc8Ow27rBC/kkykkcQsHaLerYVR5xsU%3D") 
-              no-repeat center center / cover;
+  background: url('../assets/Fondo_1.png') no-repeat center center / cover;
   background-attachment: fixed; /* efecto parallax */
   display: flex;
   align-items: center;
