@@ -46,24 +46,6 @@ const Contacto = () => {
         <p>
           <a href="info@instantfire.net">info@instantfire.net</a>
         </p>
-        <p>
-          <strong>Nuestra Fábrica</strong>
-        </p>
-        <p>CARBOEXPOR S.L.</p>
-        <p>Carretera Salamanca, Km 204, 49440 Cañizal, Zamora</p>
-        <p>+34 609 80 03 00</p>
-        <p>
-          <a href="mailto:sales@carboexpor.es">sales@carboexpor.es</a>
-        </p>
-        <p>
-          <a
-            href="https://www.carboexpor.es"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.carboexpor.es
-          </a>
-        </p>
       </div>
     </section>
   );

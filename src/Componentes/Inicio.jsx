@@ -9,7 +9,7 @@ import Instalaciones from '../assets/Instalaciones_2.webp';
 import Bolsa from '../assets/Producto_2.jpg';
 import Promo from '../assets/Video_1_edited.mp4';
 
-const Inicio = ({seccion}) => {
+const Inicio = ({seccion}) => { 
 
             switch (seccion) {
           case 'Productos':
@@ -26,7 +26,7 @@ const Inicio = ({seccion}) => {
                   <div className="section-content text-left">
                     <h2>Briquetas de carbon instantaneo</h2>
                     <p>
-                      Estamos emocionados de anunciar nuestras bolsas de briquetas instantaneas de 3kg cada una. La distribucion viene por contenedores los cuales contienen 30 tarimas cada una con 250 bolsas. El total de material suma 22.5 toneladas de carbon.
+                      Estamos emocionados de anunciar nuestras bolsas de briquetas instantaneas de 3kg. La distribucion viene por contenedores los cuales contienen 30 tarimas cada una con 250 bolsas. El total de material suma 22.5 toneladas de carbon.
                     </p>
                   </div>
                   <div className="section-image image-right media">

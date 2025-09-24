@@ -20,6 +20,8 @@
   overflow: hidden; /* Para que el degradado no sobresalga */
 }
 
+
+
 .video-container {
   display: flex;
   justify-content: center;

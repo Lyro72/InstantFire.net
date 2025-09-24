@@ -48,18 +48,6 @@ const Footer = ({ onNavClick }) => {
           </ul>
         </div>
 
-        {/* Columna 4: Infor Fábrica españa */}
-        <div className="footer-column">
-          <h3 className="footer-title">Nuestra fábrica</h3>
-          <ul className="footer-contact">
-            <li><FaIndustry /> CARBOEXPOR SL</li>
-            <li><FaMapMarkerAlt /> Carretera Salamanca, Km 204, 49440 Cañizal, Zamora</li>
-            <li><FaPhoneAlt /> +34 (609) 800-300</li>
-            <li><FaEnvelope /> sales@carboexpor.es</li>
-            <li><FaGlobeEurope /><a href="https://www.carboexpor.es"> www.carboexpor.es</a></li>
-          </ul>
-        </div>
-
       </div>
 
       {/* Línea inferior */}

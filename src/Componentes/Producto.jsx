@@ -7,12 +7,13 @@ const Producto = () => {
     {
       name: 'Briquetas de Carbón Instantáneo',
       description:
-        'Carbón ecológico de rápida ignición hecho 100% a partir de poda responsable. Ideal para parrillas, cocinas rurales y uso doméstico. Produce menos humo y calor más estable.',
+        'Carbón ecológico de rápida ignición hecho 100% a partir de poda responsable. Ideal para parrillas, cocinas rurales y uso doméstico. No produce humo y adicional a esto genera un calor más estable.',
       image: Bolsa,
       features: [
-        'Encendido en menos de 3 minutos',
+        'Encendido al instante',
         'Biodegradable y compostable después de su uso',
         'Bajo contenido de humedad y larga duración',
+        'Envio a cualquier parte del mundo'
       ],
     }
   ];

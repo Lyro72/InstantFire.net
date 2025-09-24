@@ -17,7 +17,12 @@
 .footer-column {
   flex: 1 1 220px;
   min-width: 220px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  text-align: center;     
 }
+
 
 .FooButton {
   all: unset;
@@ -37,7 +42,7 @@
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 
@@ -64,15 +69,20 @@
 }
 
 .footer-description {
-  margin-bottom: 25px;
+  margin-bottom: 25px;  /* menos separación con lo que sigue */
   line-height: 1.5;
+  text-align: justify;  /* justifica el texto */
+  max-width: 80%;       /* mantiene un bloque más limpio dentro de la columna */
 }
 
 .footer-links,
 .footer-contact {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 10px;
 }
 
 .footer-links li,
