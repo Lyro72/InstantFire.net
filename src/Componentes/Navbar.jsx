@@ -33,6 +33,7 @@ const Navbar = ({ onNavClick }) => {
             <ul>
               <li><button className="NavButton" onClick={() => onNavClick('Inicio')}>Inicio</button></li>
               <li><button className="NavButton" onClick={() => onNavClick('Acerca de Nosotros')}>Acerca de Nosotros</button></li>
+              <li><button className="NavButton" onClick={() => onNavClick('Galeria')}>Galería</button></li>
               <li><button className="NavButton" onClick={() => onNavClick('Productos')}>Productos</button></li>
               <li><button className="NavButton" onClick={() => onNavClick('Contacto')}>Contacto</button></li>
             </ul>

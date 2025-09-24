@@ -3,6 +3,8 @@ import React from 'react';
 import Contacto from './Contacto';
 import Producto from './Producto';
 import Acerca from './Acerca';
+import Galeria from './Galeria';
+
 
 import '../Estilos/Inicio.css'; 
 import Instalaciones from '../assets/Instalaciones_2.webp';
@@ -18,6 +20,8 @@ const Inicio = ({seccion}) => {
             return (<Contacto />);
           case 'Acerca de Nosotros':
             return (<Acerca />);
+          case 'Galeria':
+            return (<Galeria />);
           default:
             return (    
               <div className="cuerpo">
@@ -62,7 +66,7 @@ const Inicio = ({seccion}) => {
                     />
                   </div>
                   <div className="section-content text-right">
-                    <h2>Plantas que estamos criando</h2>
+                    <h2>Una compañia ecológica y renobable</h2>
                     <p>
                       Nuestra unión ha dado vida a un producto revolucionario: briquetas de BBQ de encendido instantáneo, únicas en el mundo, capaces de ser encendidas con tan solo encendedores simples sin ninguna necesidad de combustibles adicionales. Este avance tecnológico no solo transforma la experiencia del asado, sino que también marca un antes y un después en la industria gracias a su carácter práctico, seguro y altamente sostenible.
                     </p>

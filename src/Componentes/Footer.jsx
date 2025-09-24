@@ -33,6 +33,7 @@ const Footer = ({ onNavClick }) => {
           <ul className="footer-links">
               <li><button className="FooButton" onClick={() => onNavClick('Inicio')}>Inicio</button></li>
               <li><button className="FooButton" onClick={() => onNavClick('Acerca de Nosotros')}>Acerca de Nosotros</button></li>
+              <li><button className="FooButton" onClick={() => onNavClick('Galeria')}>Galería</button></li>
               <li><button className="FooButton" onClick={() => onNavClick('Productos')}>Productos</button></li>
               <li><button className="FooButton" onClick={() => onNavClick('Contacto')}>Contacto</button></li>
           </ul>
@@ -42,7 +43,7 @@ const Footer = ({ onNavClick }) => {
         <div className="footer-column">
           <h3 className="footer-title">Instant Fire</h3>
           <ul className="footer-contact">
-            <li><FaGlobeEurope /> Europa</li>
+            <li><a href="https://maps.app.goo.gl/m5r97mvvtFEwNnJP7?g_st=ipc" target="_blanck"><FaGlobeEurope /></a> Europa</li>
             <li><FaPhoneAlt /> +39 (342) 790-9219</li>
             <li><FaEnvelope /> info@instantfire.net</li>
           </ul>
