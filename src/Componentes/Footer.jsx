@@ -1,12 +1,11 @@
 import React from 'react';
 
 import '../Estilos/Footer.css';
-
+import Viñeta from '../assets/Viñeta.png';
 import { FaFacebookF, FaInstagram, FaTiktok, FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import { FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobeEurope, FaIndustry } from 'react-icons/fa';
 
 const Footer = ({ onNavClick }) => {
-  console.log("hola mundo");
   return (
     <footer className="footer">
             <div className="footer-container">
@@ -20,7 +19,7 @@ const Footer = ({ onNavClick }) => {
           <div className="footer-socials">
             <a href="#"><FaWhatsapp /></a>
             <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
+            <a href="#"><FaInstagram /></a> 
             <a href="#"><FaTiktok /></a>
             <a href="#"><FaXTwitter /></a>
             <a href="#"><FaYoutube /></a>
@@ -41,10 +40,10 @@ const Footer = ({ onNavClick }) => {
 
         {/* Columna 3: Contacto Instant Fire */}
         <div className="footer-column">
-          <h3 className="footer-title">Instant Fire</h3>
+          <h3 className="footer-title"><img src={Viñeta} />Instant Fire</h3>
           <ul className="footer-contact">
-            <li><a href="https://maps.app.goo.gl/m5r97mvvtFEwNnJP7?g_st=ipc" target="_blanck"><FaGlobeEurope /></a> Europa</li>
-            <li><FaPhoneAlt /> +39 (342) 790-9219</li>
+            <li ><a  href="https://maps.app.goo.gl/m5r97mvvtFEwNnJP7?g_st=ipc" target="_blanck"><FaGlobeEurope /></a><p className="footer-direction">Ctra. N-620 Km. 204, 49440 Cañizal, Zamora. España</p></li>
+            <li><FaPhoneAlt />+34 629 924-088</li>
             <li><FaEnvelope /> info@instantfire.net</li>
           </ul>
         </div>

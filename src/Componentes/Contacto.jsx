@@ -41,8 +41,8 @@ const Contacto = () => {
         <p>
           <strong>Instant Fire</strong>
         </p>
-        <p>Europa</p>
-        <p>+39 (342) 790-9219</p>
+        <p>Ctra. N-620 Km. 204, 49440 Cañizal, Zamora. España</p>
+        <p>Oficina: +34 629 924-088</p>
         <p>
           <a href="info@instantfire.net">info@instantfire.net</a>
         </p>

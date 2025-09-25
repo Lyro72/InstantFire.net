@@ -23,7 +23,6 @@
   text-align: center;     
 }
 
-
 .FooButton {
   all: unset;
   cursor: pointer;
@@ -45,108 +44,107 @@
   margin-bottom: 10px;
 }
 
+.footer-title img {
+  padding-left: 0px;
+  max-width: 40px;
+  max-height: 40px;
+}
 
-/* Línea verde a la izquierda de los botones del menú */
+/* Línea verde a la izquierda del título */
 .footer-title::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
-  background-color: #28a745; /* Color verde */
-  opacity: 0; /* Inicialmente no visible */
-  transition: opacity 0.3s ease; /* Suavizado de la aparición */
+  background-color: #28a745; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
 }
 
-/* Mostrar la línea verde al hacer hover */
 .footer-title:hover::before {
-  opacity: 1; /* La línea se hace visible */
+  opacity: 1; 
 }
 
 .footer-title:hover {
   border-left: 4px solid #28a745;
-  color: #28a745; /* Cambia el color del texto al verde */
+  color: #28a745; 
 }
 
 .footer-description {
-  margin-bottom: 25px;  /* menos separación con lo que sigue */
+  margin-bottom: 25px;
   line-height: 1.5;
-  text-align: justify;  /* justifica el texto */
-  max-width: 80%;       /* mantiene un bloque más limpio dentro de la columna */
+  text-align: justify;
+  max-width: 80%;
 }
 
-.footer-links,
+/* -------- CONTACTO (Columna 3) -------- */
 .footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  gap: 12px;
+  text-align: center;    
   list-style: none;
   padding: 0;
-  margin-bottom: 0;
-  margin-right: 0;
-  margin-left: 0;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
 }
 
-.footer-links li,
 .footer-contact li {
-  margin-bottom: 10px;
   display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer-links a {
-  color: #cfd1d2;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  color: #ffffff;
-}
-
-.footer-contact a {
-  color: #cfd1d2;
-  text-decoration: none;
-}
-
-.footer-contact a:hover {
-  color: white;
-}
-
-.footer-socials {
-  display: flex;
+  flex-direction: row;      
+  align-items: flex-start;  
+  justify-content: center;  
   gap: 12px;
-  margin-top: 10px;
+  width: 100%;
+  padding: 6px 0;
+  box-sizing: border-box;
 }
-
-.footer-socials a {
-  background-color: #2e2f30;
-  color: #28a745; /* iconos en verde */
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 16px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.footer-socials a:hover {
-  background-color: #28a745;
-  color: white;
-}
-
-.footer-bottom {
-  border-top: 1px solid #333;
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 15px;
-  font-size: 14px;
-  color: #aaa;
-}
-
 
 .footer-contact li svg,
-.footer-title svg {
+.footer-contact li img {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;   
   color: #28a745;
 }
 
-/* Quick Links */
+.footer-direction {
+  margin: 0;
+  line-height: 1.5;
+  text-align: justify;       
+  max-width: 380px;          
+  display: block;            
+  color: #cfd1d2;
+}
+
+/* Responsive: apilar icono encima del texto */
+@media (max-width: 640px) {
+  .footer-contact li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-contact li svg,
+  .footer-contact li img {
+    margin-top: 0;
+  }
+
+  .footer-direction {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/* -------- LINKS -------- */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
 .footer-links li {
   margin-bottom: 10px;
   display: flex;
@@ -164,4 +162,44 @@
   content: '➤';
   color: #28a745;
   margin-right: 8px;
+}
+
+.footer-links a {
+  color: #cfd1d2;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* -------- ICONOS REDES -------- */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.footer-socials a {
+  background-color: #2e2f30;
+  color: #28a745;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* -------- BOTTOM -------- */
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
 }
