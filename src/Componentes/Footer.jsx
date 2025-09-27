@@ -27,7 +27,7 @@ const Footer = ({ onNavClick }) => {
         </div>
 
         {/* Columna 2: Enlaces rápidos */}
-        <div className="footer-column">
+        <div className="footer-column footer-quick-links">
           <h3 className="footer-title">Enlaces rápidos</h3>
           <ul className="footer-links">
               <li><button className="FooButton" onClick={() => onNavClick('Inicio')}>Inicio</button></li>

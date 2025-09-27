@@ -73,4 +73,43 @@
   background: rgba(255, 255, 255, 0.1); /* fondo sutil translúcido */
 }
 
+@media (max-width: 650px) {
+  .hero {
+    height: auto; /* Ajusta altura al contenido */
+    padding: 50px 15px;
+  }
+
+  .hero .overlay {
+    padding: 25px 15px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  /* Botones: mostrar solo el botón "Descubre nuestros productos" */
+  .buttons button {
+    display: none;
+  }
+
+  /* Mostrar solo el segundo botón (índice 1) */
+  .buttons button:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+  }
+}
 

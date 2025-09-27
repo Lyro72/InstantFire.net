@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import '../Estilos/Contacto.css';
 
 const Contacto = () => {
@@ -6,7 +6,7 @@ const Contacto = () => {
     <section className="contact-section">
       <div className="contact-form">
         <h2>Envíanos un Mensaje</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
+        <form action="/enviar_formulario.php" method="POST">          
           <div className="form-group">
             <label htmlFor="name">Nombre</label>
             <input type="text" id="name" name="name" required />
@@ -42,7 +42,7 @@ const Contacto = () => {
           <strong>Instant Fire</strong>
         </p>
         <p>Ctra. N-620 Km. 204, 49440 Cañizal, Zamora. España</p>
-        <p>Oficina: +34 629 924-088</p>
+        <p>Oficina: +34 629 924-088 / +34 980 604 279</p>
         <p>
           <a href="info@instantfire.net">info@instantfire.net</a>
         </p>

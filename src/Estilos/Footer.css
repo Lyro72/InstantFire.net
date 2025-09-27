@@ -203,3 +203,10 @@
   font-size: 14px;
   color: #aaa;
 }
+
+@media (max-width: 800px) {
+  .footer-quick-links {
+    display: none;
+  }
+}
+

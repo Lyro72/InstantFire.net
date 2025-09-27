@@ -1,5 +1,7 @@
-import React from 'react';
+import React from 'react'; 
 import '../Estilos/Acerca.css';
+import Certificado1 from '../assets/Certificado FSC.jpg';
+import Certificado2 from '../assets/Certificado PEFC.jpg';
 
 const Acerca = () => {
   return (
@@ -78,6 +80,10 @@ const Acerca = () => {
               <strong>Colaboración:</strong> Nuestra esencia nace de la unión; sabemos que juntos somos más fuertes y que las alianzas son clave para generar cambios positivos a gran escala.
             </li>
           </ul>
+          <div className="certificaciones">
+            <img src={Certificado1} />
+            <img src={Certificado2} />
+          </div>
         </div>
       </div>
     </section>

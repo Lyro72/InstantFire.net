@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'; 
 import '../Estilos/Galeria.css';
 
 // Importa tus imágenes

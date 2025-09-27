@@ -114,6 +114,26 @@
   color: #2e7d32;
 }
 
+.certificaciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.certificaciones img {
+max-width: 150px;
+max-height: 150px;
+border-radius: 10px;
+margin: 30px 20px 0 20px;
+}
+
+.certificaciones img:hover {
+  box-shadow: 10px;
+  max-width: 160px;
+  max-height: 160px;
+}
+
 /* Responsivo */
 @media (max-width: 900px) {
   .compromiso ul li {

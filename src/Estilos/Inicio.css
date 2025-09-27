@@ -50,14 +50,17 @@
 
 
 
+
 .media img,
 .media video {
-  max-width: 500px;     /* Tamaño máximo uniforme */
-  height: 300px;        /* Altura fija para uniformidad */
-  object-fit: cover;    /* Rellena el marco sin deformar */
+  max-width: 100%;
+  height: auto; /* cambia altura automática */
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-height: 300px; /* opcional para limitar altura máxima */
 }
+
 
 .media video {
   width: 100%;
@@ -115,5 +118,12 @@
 
   .image img {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .media img,
+  .media video {
+    max-height: 200px; /* más pequeño en móviles */
   }
 }

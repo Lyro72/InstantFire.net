@@ -167,23 +167,117 @@ nav ul li .NavButton {
   padding: 10px 20px;
 }
 
-/* Ajustes para la responsividad */
-@media (max-width: 768px) {
+.hamburger-menu {
+  display: none;
+}
+
+
+@media (max-width: 765px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .menues {
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
 
-  nav ul {
+  /* Oculta el menú de escritorio */
+  .main-nav {
+    display: none;
+  }
+
+  /* Hamburguesa visible */
+  .hamburger-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger-icon {
+    width: 45px;
+    height: 45px;
+    background: #2a2e2f;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px #181a1b, -5px -5px 10px #2e3233;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px;
   }
 
+  .hamburger-icon .bar {
+    width: 70%;
+    height: 3px;
+    background-color: #cfd1d2;
+    margin: 3px 0;
+    border-radius: 3px;
+  }
+
+  /* Menú desplegable oculto por defecto */
+  .hamburger-dropdown {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background-color: #1f2223;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: none;
+    padding: 10px 20px;
+    z-index: 20;
+  }
+
+  .hamburger-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Hover activa menú */
+  .hamburger-menu:hover .hamburger-dropdown {
+    display: block;
+  }
+
+  /* Ajuste de botones dentro del menú desplegable */
+  .hamburger-dropdown .NavButton {
+    background-color: transparent;
+    padding: 5px 0;
+    color: #cfd1d2;
+    border: none;
+    text-align: right;
+    width: 100%;
+  }
+
+  /* Quitar puntos de los botones li */
+  .hamburger-dropdown li {
+    list-style: none;
+  }
+
+  /* Selector de idiomas se mantiene visible */
   .language-selector {
-    margin-top: 10px;
-    justify-content: flex-start;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .language-selector button {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .language-selector {
+    display: none !important;
   }
 }

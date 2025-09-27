@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import '../Estilos/Producto.css';
 import Bolsa from '../assets/Producto_2.jpg';
 
