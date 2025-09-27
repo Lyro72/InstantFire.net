@@ -3,7 +3,6 @@ const Traducciones = {
 //ESPAÑOL
 
 Es: {
-  Es: {
   titulos: {
     Inicio: 'Inicio',
     Productos: 'Productos',
@@ -23,7 +22,7 @@ Es: {
 	      es: 'ES',
       	},
     },
-    header: {
+  header: {
       subtitulo: 'Carbón vegetal sostenible de primera calidad',
       lema: 'Unidos somos más fuertes',
       botones: {
@@ -32,7 +31,7 @@ Es: {
         contacto: 'Contáctanos',
       },
     },
-    inicio: {
+  inicio: {
       seccion1: {
         titulo: "Briquetas de carbón instantáneo",
         texto: "Estamos emocionados de anunciar nuestras bolsas de briquetas instantáneas de 3kg. La distribución viene por contenedores los cuales contienen 30 tarimas cada una con 250 bolsas. El total de material suma 22.5 toneladas de carbón.",
@@ -42,7 +41,7 @@ Es: {
         texto: "Nuestra unión ha dado vida a un producto revolucionario: briquetas de BBQ de encendido instantáneo, únicas en el mundo, capaces de ser encendidas con tan solo encendedores simples sin ninguna necesidad de combustibles adicionales. Este avance tecnológico no solo transforma la experiencia del asado, sino que también marca un antes y un después en la industria gracias a su carácter práctico, seguro y altamente sostenible.",
       },
     },
-    acerca: {
+  acerca: {
       titulo: '¿Quiénes somos?',
       presentacion1: 'En INSTANTFIRE creemos firmemente que la innovación y el respeto por el planeta pueden ir de la mano. Nacemos de la fusión estratégica entre Casmiri360 y Carboexport, dos compañías con larga trayectoria en la industria de los carbones para BBQ, que han unido fuerzas bajo el lema: “JUNTOS SOMOS MÁS FUERTES”.',
       presentacion2: 'Nuestra unión ha dado vida a un producto revolucionario: briquetas de BBQ de encendido instantáneo, únicas en el mundo, capaces de ser encendidas con tan solo encendedores simples sin ninguna necesidad de combustibles adicionales. Este avance tecnológico no solo transforma la experiencia del asado, sino que también marca un antes y un después en la industria gracias a su carácter práctico, seguro y altamente sostenible.',
@@ -89,7 +88,7 @@ Es: {
         }
       ]
     },
-    galeria: {
+  galeria: {
       titulo: "Galería",
       descripcion: "Descubre nuestras instalaciones, procesos y productos a través de esta selección de imágenes.",
       botones: {
@@ -98,7 +97,7 @@ Es: {
       },
       altImagen: "Imagen de la galería número",
     },
-    producto: {
+  producto: {
       titulo: "Nuestros Productos",
       introduccion:
         "En Instantfire desarrollamos soluciones ecológicas adaptadas a las necesidades modernas. Nuestros productos no solo ofrecen alto rendimiento, sino que también devuelven valor a la tierra tras su uso.",
@@ -116,7 +115,7 @@ Es: {
         },
       ],
     },
-    contacto: {
+  contacto: {
       titulo: "Contáctanos",
       descripcion:
         "¿Tienes alguna pregunta o quieres saber más sobre nuestros productos? Escríbenos y te responderemos a la brevedad.",
@@ -141,7 +140,7 @@ Es: {
         contenido: "contacto@instantfire.com",
       },
     },
-    footer: {
+  footer: {
       derechos: "© 2025 Instantfire. Todos los derechos reservados.",
       empresa: "Instantfire S.A.",
       avisoLegal: "Aviso Legal",
@@ -175,7 +174,7 @@ En: {
 	      es: 'ES',
 	    },
     },
-    header: {
+  header: {
       subtitulo: 'Premium sustainable charcoal',
       lema: 'Together we are stronger',
       botones: {
@@ -184,7 +183,7 @@ En: {
         contacto: 'Contact Us',
       },
     },
-    inicio: {
+  inicio: {
       seccion1: {
         titulo: "Instant Charcoal Briquettes",
         texto: "We are excited to announce our 3kg bags of instant briquettes. The shipment comes in containers each containing 30 pallets with 250 bags. The total material sums up to 22.5 tons of charcoal.",
@@ -194,7 +193,7 @@ En: {
         texto: "Our union has given life to a revolutionary product: instant lighting BBQ briquettes, unique in the world, able to be lit with simple lighters without any need for additional fuels. This technological advance not only transforms the grilling experience but also marks a before and after in the industry thanks to its practical, safe, and highly sustainable character.",
       },
     },
-    acerca: {
+  acerca: {
       titulo: 'Who Are We?',
       presentacion1: 'At INSTANTFIRE, we firmly believe that innovation and respect for the planet can go hand in hand. We were born from the strategic fusion between Casmiri360 and Carboexport, two companies with extensive experience in the BBQ charcoal industry, united under the motto: "TOGETHER WE ARE STRONGER."',
       presentacion2: 'Our union has given life to a revolutionary product: instant ignition BBQ briquettes, unique in the world, capable of being lit with simple lighters without the need for additional fuels. This technological advance not only transforms the grilling experience but also marks a before and after in the industry thanks to its practical, safe, and highly sustainable nature.',
@@ -241,7 +240,7 @@ En: {
         }
       ]
     },
-    galeria: {
+  galeria: {
       titulo: "Gallery",
       descripcion: "Explore our facilities, processes, and products through this selection of images.",
       botones: {
@@ -250,7 +249,7 @@ En: {
       },
       altImagen: "Gallery image number",
     },
-    producto: {
+  producto: {
       titulo: "Our Products",
       introduccion:
         "At Instantfire we develop ecological solutions adapted to modern needs. Our products not only offer high performance but also give back value to the earth after use.",
@@ -268,7 +267,7 @@ En: {
         },
       ],
     },
-    contacto: {
+  contacto: {
       titulo: "Contact Us",
       descripcion:
         "Do you have any questions or want to know more about our products? Write to us and we will respond as soon as possible.",
@@ -293,7 +292,7 @@ En: {
         contenido: "contact@instantfire.com",
       },
     },
-    footer: {
+  footer: {
       derechos: "© 2025 Instantfire. All rights reserved.",
       empresa: "Instantfire Inc.",
       avisoLegal: "Legal Notice",
@@ -455,6 +454,6 @@ It: {
     }
   }
 }
-}
+
 
 export default Traducciones;

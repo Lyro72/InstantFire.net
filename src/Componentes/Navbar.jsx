@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import '../Estilos/Navbar.css';
 import Logo from '../assets/Logo_2.png';
+import { useIdioma } from './IdiomaContext';
+
 
 const Navbar = ({ onNavClick }) => {
   const [isSticky, setIsSticky] = useState(false);
+  const { idioma, setIdioma } = useIdioma();
 
   const handleScroll = () => {
     setIsSticky(window.scrollY > 100);
@@ -13,6 +16,8 @@ const Navbar = ({ onNavClick }) => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+
 
   return (
     <div className={`navbar-container ${isSticky ? 'sticky' : ''}`}>
@@ -27,10 +32,11 @@ const Navbar = ({ onNavClick }) => {
         <div className="menues">
           {/* Selector de idioma */}
           <div className={`language-selector ${isSticky ? 'sticky-language' : ''}`}>
-            <button>IT</button>
-            <button>EN</button>
-            <button>ES</button>
+            <button onClick={() => setIdioma('It')}>IT</button>
+            <button onClick={() => setIdioma('En')}>EN</button>
+            <button onClick={() => setIdioma('Es')}>ES</button>
           </div>
+
 
           {/* Menú hamburguesa (mobile) */}
           <div className="hamburger-menu">
