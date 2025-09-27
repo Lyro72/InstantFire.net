@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import '../Estilos/Navbar.css';
 import Logo from '../assets/Logo_2.png';
 import { useIdioma } from './IdiomaContext';
 
-
 const Navbar = ({ onNavClick }) => {
   const [isSticky, setIsSticky] = useState(false);
-  const { idioma, setIdioma } = useIdioma();
+  const { idioma, setIdioma, traducciones } = useIdioma(); // 👈 usamos traducciones
 
   const handleScroll = () => {
     setIsSticky(window.scrollY > 100);
@@ -17,7 +16,7 @@ const Navbar = ({ onNavClick }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-
+  const t = traducciones.navbar; // 👈 alias para simplificar
 
   return (
     <div className={`navbar-container ${isSticky ? 'sticky' : ''}`}>
@@ -37,7 +36,6 @@ const Navbar = ({ onNavClick }) => {
             <button onClick={() => setIdioma('Es')}>ES</button>
           </div>
 
-
           {/* Menú hamburguesa (mobile) */}
           <div className="hamburger-menu">
             <div className="hamburger-icon">
@@ -47,31 +45,11 @@ const Navbar = ({ onNavClick }) => {
             </div>
             <div className="hamburger-dropdown">
               <ul>
-                <li>
-                  <button className="NavButton" onClick={() => onNavClick('Inicio')}>
-                    Inicio
-                  </button>
-                </li>
-                <li>
-                  <button className="NavButton" onClick={() => onNavClick('Acerca de Nosotros')}>
-                    Acerca de Nosotros
-                  </button>
-                </li>
-                <li>
-                  <button className="NavButton" onClick={() => onNavClick('Galeria')}>
-                    Galería
-                  </button>
-                </li>
-                <li>
-                  <button className="NavButton" onClick={() => onNavClick('Productos')}>
-                    Productos
-                  </button>
-                </li>
-                <li>
-                  <button className="NavButton" onClick={() => onNavClick('Contacto')}>
-                    Contacto
-                  </button>
-                </li>
+                <li><button className="NavButton" onClick={() => onNavClick('Inicio')}>{t.inicio}</button></li>
+                <li><button className="NavButton" onClick={() => onNavClick('Acerca')}>{t.acerca}</button></li>
+                <li><button className="NavButton" onClick={() => onNavClick('Galeria')}>{t.galeria}</button></li>
+                <li><button className="NavButton" onClick={() => onNavClick('Productos')}>{t.productos}</button></li>
+                <li><button className="NavButton" onClick={() => onNavClick('Contacto')}>{t.contacto}</button></li>
               </ul>
             </div>
           </div>
@@ -79,31 +57,11 @@ const Navbar = ({ onNavClick }) => {
           {/* Menú normal (desktop) */}
           <nav className="main-nav">
             <ul>
-              <li>
-                <button className="NavButton" onClick={() => onNavClick('Inicio')}>
-                  Inicio
-                </button>
-              </li>
-              <li>
-                <button className="NavButton" onClick={() => onNavClick('Acerca de Nosotros')}>
-                  Acerca de Nosotros
-                </button>
-              </li>
-              <li>
-                <button className="NavButton" onClick={() => onNavClick('Galeria')}>
-                  Galería
-                </button>
-              </li>
-              <li>
-                <button className="NavButton" onClick={() => onNavClick('Productos')}>
-                  Productos
-                </button>
-              </li>
-              <li>
-                <button className="NavButton" onClick={() => onNavClick('Contacto')}>
-                  Contacto
-                </button>
-              </li>
+              <li><button className="NavButton" onClick={() => onNavClick('Inicio')}>{t.inicio}</button></li>
+              <li><button className="NavButton" onClick={() => onNavClick('Acerca')}>{t.acerca}</button></li>
+              <li><button className="NavButton" onClick={() => onNavClick('Galeria')}>{t.galeria}</button></li>
+              <li><button className="NavButton" onClick={() => onNavClick('Productos')}>{t.productos}</button></li>
+              <li><button className="NavButton" onClick={() => onNavClick('Contacto')}>{t.contacto}</button></li>
             </ul>
           </nav>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import Contacto from './Contacto';
 import Producto from './Producto';
 import Acerca from './Acerca';
@@ -10,32 +10,29 @@ import Instalaciones from '../assets/Instalaciones_2.webp';
 import Bolsa from '../assets/Producto_2.jpg';
 import Promo from '../assets/Video_1_edited.mp4';
 
+import { useIdioma } from './IdiomaContext';
+
 const Inicio = ({ seccion }) => {
+  const { traducciones } = useIdioma(); // Hook para idioma actual
+  const t = traducciones.inicio;        // Alias para facilitar acceso
+
   switch (seccion) {
     case 'Productos':
       return <Producto />;
-
     case 'Contacto':
       return <Contacto />;
-
-    case 'Acerca de Nosotros':
+    case 'Acerca':
       return <Acerca />;
-
     case 'Galeria':
       return <Galeria />;
-
     default:
       return (
         <div className="cuerpo">
           {/* Sección 1: Texto / Imagen */}
           <section className="section">
             <div className="section-content text-left">
-              <h2>Briquetas de carbón instantáneo</h2>
-              <p>
-                Estamos emocionados de anunciar nuestras bolsas de briquetas instantáneas de 3kg.
-                La distribución viene por contenedores, los cuales contienen 30 tarimas, cada una
-                con 250 bolsas. El total de material suma 22.5 toneladas de carbón.
-              </p>
+              <h2>{t.seccion1.titulo}</h2>
+              <p>{t.seccion1.texto}</p>
             </div>
             <div className="section-image image-right media">
               <img src={Bolsa} alt="Producto de briquetas" />
@@ -53,7 +50,6 @@ const Inicio = ({ seccion }) => {
                 muted
                 playsInline
               >
-                Tu navegador no soporta la reproducción de video.
               </video>
             </div>
           </section>
@@ -64,15 +60,8 @@ const Inicio = ({ seccion }) => {
               <img src={Instalaciones} alt="Instalaciones" />
             </div>
             <div className="section-content text-right">
-              <h2>Una compañía ecológica y renovable</h2>
-              <p>
-                Nuestra unión ha dado vida a un producto revolucionario: briquetas de BBQ de
-                encendido instantáneo, únicas en el mundo, capaces de ser encendidas con tan solo
-                encendedores simples sin ninguna necesidad de combustibles adicionales. Este avance
-                tecnológico no solo transforma la experiencia del asado, sino que también marca un
-                antes y un después en la industria gracias a su carácter práctico, seguro y
-                altamente sostenible.
-              </p>
+              <h2>{t.seccion2.titulo}</h2>
+              <p>{t.seccion2.texto}</p>
             </div>
           </section>
         </div>

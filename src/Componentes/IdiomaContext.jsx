@@ -1,4 +1,4 @@
-// context/IdiomaContext.jsx
+// context/IdiomaContext.jsx 
 import { createContext, useState, useContext } from 'react';
 import Traducciones from './Traducciones'; // Asegúrate que la ruta sea correcta
 

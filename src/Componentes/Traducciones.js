@@ -1,4 +1,4 @@
-const Traducciones = {
+const Traducciones = { 
 
 //ESPAÑOL
 
@@ -7,7 +7,7 @@ Es: {
     Inicio: 'Inicio',
     Productos: 'Productos',
     Contacto: 'Contacto',
-    AcercadeNosotros: 'Acerca de Nosotros',
+    Acerca: 'Acerca de Nosotros',
     Galeria: 'Galería'
   },
 	navbar: {
@@ -129,25 +129,30 @@ Es: {
       },
       direccion: {
         titulo: "Dirección",
-        contenido: "Av. Ejemplo 123, Ciudad, País",
+        contenido: "Ctra. N-620 Km. 204, 49440 Cañizal, Zamora. España",
       },
       telefono: {
-        titulo: "Teléfono",
-        contenido: "+34 123 456 789",
+        titulo: "Informacion de contacto",
+        contenido: "Oficina: +34 629 924-088 / +34 980 604 279",
       },
       correoElectronico: {
         titulo: "Correo electrónico",
-        contenido: "contacto@instantfire.com",
+        contenido: "info@instantfire.com",
       },
     },
-  footer: {
-      derechos: "© 2025 Instantfire. Todos los derechos reservados.",
-      empresa: "Instantfire S.A.",
-      avisoLegal: "Aviso Legal",
-      privacidad: "Política de Privacidad",
-      contacto: "Contacto",
-      redesSociales: "Síguenos en nuestras redes sociales",
-    }
+footer: {
+  descripcion: "Estamos comprometidos con la producción sostenible de carbón, respetando el medio ambiente y apoyando a las comunidades locales.",
+  enlaces: {
+    titulo: "Enlaces rápidos",
+    inicio: "Inicio",
+    acerca: "Acerca de Nosotros",
+    galeria: "Galería",
+    productos: "Productos",
+    contacto: "Contacto"
+  },
+  derechos: "Todos los derechos reservados."
+}
+
 },
 
 
@@ -159,7 +164,7 @@ En: {
       Inicio: 'Home',
       Productos: 'Products',
       Contacto: 'Contact',
-      AcercadeNosotros: 'About Us',
+      Acerca: 'About Us',
       Galeria: 'Gallery',
     },
 	navbar: {
@@ -281,25 +286,30 @@ En: {
       },
       direccion: {
         titulo: "Address",
-        contenido: "Example Ave 123, City, Country",
+        contenido: "Ctra. N-620 Km. 204, 49440 Cañizal, Zamora. España",
       },
       telefono: {
-        titulo: "Phone",
-        contenido: "+1 234 567 890",
+        titulo: "Contact information",
+        contenido: "Office: +34 629 924-088 / +34 980 604 279",
       },
       correoElectronico: {
         titulo: "Email",
-        contenido: "contact@instantfire.com",
+        contenido: "info@instantfire.com",
       },
     },
-  footer: {
-      derechos: "© 2025 Instantfire. All rights reserved.",
-      empresa: "Instantfire Inc.",
-      avisoLegal: "Legal Notice",
-      privacidad: "Privacy Policy",
-      contacto: "Contact",
-      redesSociales: "Follow us on our social networks",
-    }
+footer: {
+  descripcion: "We are committed to the sustainable production of charcoal, respecting the environment and supporting local communities.",
+  enlaces: {
+    titulo: "Quick Links",
+    inicio: "Home",
+    acerca: "About Us",
+    galeria: "Gallery",
+    productos: "Products",
+    contacto: "Contact"
+  },
+  derechos: "All rights reserved."
+}
+
 },
 
 
@@ -308,10 +318,10 @@ En: {
 
 It: {
     titulos: {
-      Inicio: 'Home',
+      Inicio: 'Inizio',
       Productos: 'Prodotti',
       Contacto: 'Contatto',
-      AcercadeNosotros: 'Chi Siamo',
+      Acerca: 'Chi Siamo',
       Galeria: 'Galleria',
     },
     navbar: {
@@ -433,25 +443,30 @@ It: {
       },
       direccion: {
         titulo: "Indirizzo",
-        contenido: "Via Esempio 123, Città, Paese",
+        contenido: "Ctra. N-620 Km. 204, 49440 Cañizal, Zamora. España",
       },
       telefono: {
-        titulo: "Telefono",
-        contenido: "+39 123 456 7890",
+        titulo: "Informazioni sui contatti",
+        contenido: "ufficio: +34 629 924-088 / +34 980 604 279",
       },
       correoElectronico: {
         titulo: "Email",
-        contenido: "contatto@instantfire.com",
+        contenido: "info@instantfire.com",
       },
     },
-    footer: {
-      derechos: "© 2025 Instantfire. Tutti i diritti riservati.",
-      empresa: "Instantfire S.p.A.",
-      avisoLegal: "Avviso Legale",
-      privacidad: "Politica sulla Privacy",
-      contacto: "Contatto",
-      redesSociales: "Seguici sui nostri social network",
-    }
+footer: {
+  descripcion: "Siamo impegnati nella produzione sostenibile di carbone, rispettando l'ambiente e supportando le comunità locali.",
+  enlaces: {
+    titulo: "Collegamenti Rapidi",
+    inicio: "Home",
+    acerca: "Chi Siamo",
+    galeria: "Galleria",
+    productos: "Prodotti",
+    contacto: "Contatto"
+  },
+  derechos: "Tutti i diritti riservati."
+}
+
   }
 }
 

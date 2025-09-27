@@ -1,34 +1,35 @@
 import React from 'react';
 import "../Estilos/Header.css";
+import { useIdioma } from './IdiomaContext'; // Ajusta la ruta si es necesario
 
-const Header = ({ titulo, onNavClick }) => {
+const Header = ({titulo, onNavClick }) => {
+  const { traducciones } = useIdioma();
+    const t = traducciones.header;
+
   return (
     <header className="hero">
       <div className="overlay">
         <h1>{titulo}</h1>
-        <p>Carbón vegetal sostenible de primera calidad</p>
-        <h3 className="subtitle">Unidos somos más fuertes</h3>
+        <p>{t.subtitulo}</p>
+        <h3 className="subtitle">{t.lema}</h3>
 
         <div className="buttons">
-          <button
-            className="btn green"
-            onClick={() => onNavClick('Acerca de Nosotros')}
-          >
-            Acerca de Nosotros
+          <button className="btn green" onClick={() => onNavClick('Acerca')}>
+            {t.botones.acerca}
           </button>
 
           <button
             className="btn green"
             onClick={() => onNavClick('Productos')}
           >
-            Descubre nuestros productos
+            {t.botones.productos}
           </button>
 
           <button
             className="btn outline"
             onClick={() => onNavClick('Contacto')}
           >
-            Contáctanos
+            {t.botones.contacto}
           </button>
         </div>
       </div>
@@ -37,3 +38,4 @@ const Header = ({ titulo, onNavClick }) => {
 };
 
 export default Header;
+

@@ -5,7 +5,12 @@ import Viñeta from '../assets/Viñeta.png';
 import { FaFacebookF, FaInstagram, FaTiktok, FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import { FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobeEurope, FaIndustry } from 'react-icons/fa';
 
+import { useIdioma } from './IdiomaContext';
+
 const Footer = ({ onNavClick }) => {
+    const { traducciones } = useIdioma();
+  const t = traducciones.footer;
+
   return (
     <footer className="footer">
             <div className="footer-container">
@@ -14,7 +19,7 @@ const Footer = ({ onNavClick }) => {
         <div className="footer-column">
           <h3 className="footer-title">Instant Fire</h3>
           <p className="footer-description">
-            Estamos comprometidos con la producción sostenible de carbón, respetando el medio ambiente y apoyando a las comunidades locales.
+            {t.descripcion}
           </p>
           <div className="footer-socials">
             <a href="#"><FaWhatsapp /></a>
@@ -26,15 +31,15 @@ const Footer = ({ onNavClick }) => {
           </div>
         </div>
 
-        {/* Columna 2: Enlaces rápidos */}
+     {/* Columna 2: Enlaces rápidos */}
         <div className="footer-column footer-quick-links">
-          <h3 className="footer-title">Enlaces rápidos</h3>
+          <h3 className="footer-title">{t.enlaces.titulo}</h3>
           <ul className="footer-links">
-              <li><button className="FooButton" onClick={() => onNavClick('Inicio')}>Inicio</button></li>
-              <li><button className="FooButton" onClick={() => onNavClick('Acerca de Nosotros')}>Acerca de Nosotros</button></li>
-              <li><button className="FooButton" onClick={() => onNavClick('Galeria')}>Galería</button></li>
-              <li><button className="FooButton" onClick={() => onNavClick('Productos')}>Productos</button></li>
-              <li><button className="FooButton" onClick={() => onNavClick('Contacto')}>Contacto</button></li>
+            <li><button className="FooButton" onClick={() => onNavClick('Inicio')}>{t.enlaces.inicio}</button></li>
+            <li><button className="FooButton" onClick={() => onNavClick('Acerca')}>{t.enlaces.acerca}</button></li>
+            <li><button className="FooButton" onClick={() => onNavClick('Galeria')}>{t.enlaces.galeria}</button></li>
+            <li><button className="FooButton" onClick={() => onNavClick('Productos')}>{t.enlaces.productos}</button></li>
+            <li><button className="FooButton" onClick={() => onNavClick('Contacto')}>{t.enlaces.contacto}</button></li>
           </ul>
         </div>
 
@@ -52,7 +57,7 @@ const Footer = ({ onNavClick }) => {
 
       {/* Línea inferior */}
       <div className="footer-bottom">
-        © 2025 Instant Fire. Todos los derechos reservados.
+        © 2025 Instant Fire. {t.derechos}
       </div>
     </footer>
   );

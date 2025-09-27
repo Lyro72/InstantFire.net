@@ -40,12 +40,23 @@
   border-radius: 12px;
 }
 
+.section-content,
+.section-image {
+  flex: 1;
+  min-width: 0;
+}
+
 /* Multimedia estándar (imagenes y video) */
 .media {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.section-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 
@@ -61,10 +72,6 @@
   max-height: 300px; /* opcional para limitar altura máxima */
 }
 
-
-.media video {
-  width: 100%;
-}
 
 .section:hover {
   transform: scale(1.01);

@@ -1,32 +1,28 @@
 import React from 'react'; 
 import '../Estilos/Producto.css';
 import Bolsa from '../assets/Producto_2.jpg';
+import { useIdioma } from './IdiomaContext';
+
 
 const Producto = () => {
+  const { traducciones } = useIdioma();
+  const t = traducciones.producto;
+
   const productList = [ 
     {
-      name: 'Briquetas de Carbón Instantáneo',
+      name: t.productos[0].nombre,
       description:
-        'Carbón ecológico de rápida ignición hecho 100% a partir de poda responsable. Ideal para parrillas, cocinas rurales y uso doméstico. No produce humo y adicional a esto genera un calor más estable.',
+        t.productos[0].descripcion,
       image: Bolsa,
-      features: [
-        'Encendido al instante',
-        'Biodegradable y compostable después de su uso',
-        'Bajo contenido de humedad y larga duración',
-        'Envio a cualquier parte del mundo'
-      ],
+      features: t.productos[0].caracteristicas,
     }
   ];
 
   return (
     <section className="products-section">
       <div className="container">
-        <h1 className="products-title">Nuestros Productos</h1>
-        <p className="products-intro">
-          En Instantfire desarrollamos soluciones ecológicas adaptadas a las
-          necesidades modernas. Nuestros productos no solo ofrecen alto
-          rendimiento, sino que también devuelven valor a la tierra tras su uso.
-        </p>
+        <h1 className="products-title">{t.titulo}</h1>
+        <p className="products-intro">{t.introduccion}</p>
 
         <div className="product-grid">
           {productList.map((product, index) => (

@@ -1,5 +1,6 @@
 import { useState } from 'react'; 
 import '../Estilos/Galeria.css';
+import { useIdioma } from './IdiomaContext';
 
 // Importa tus imágenes
 import Fondo1 from '../assets/Fondo_1.png';
@@ -35,6 +36,9 @@ const Galeria = () => {
   const total = imagenes.length;
   const imagenesPorPagina = 4;
 
+  const { traducciones } = useIdioma();
+  const t = traducciones.galeria;
+
   const siguiente = () => {
     if (indice + imagenesPorPagina < total) {
       setIndice(indice + imagenesPorPagina);
@@ -52,21 +56,20 @@ const Galeria = () => {
   return (
     <div className="carrusel-container">
       <button onClick={anterior} disabled={indice === 0}>
-        ← Anterior
+        {t.botones.anterior}
       </button>
 
       <div className="carrusel-grid">
         {imagenesVisibles.map((src, i) => (
-          <img key={i} src={src} alt={`Imagen ${i}`} className="carrusel-img" />
+          <img key={i} src={src} alt={`Imagen ${i + indice + 1}`} className="carrusel-img" />
         ))}
       </div>
 
       <button onClick={siguiente} disabled={indice + imagenesPorPagina >= total}>
-        Siguiente →
+        {t.botones.siguiente}
       </button>
     </div>
   );
 };
 
 export default Galeria;
-
