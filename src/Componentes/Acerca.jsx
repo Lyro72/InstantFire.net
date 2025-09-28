@@ -1,7 +1,7 @@
 import React from 'react'; 
 import '../Estilos/Acerca.css';
-import Certificado1 from '../assets/Certificado FSC.jpg';
-import Certificado2 from '../assets/Certificado PEFC.jpg';
+import Certificado1 from '../assets/Certificado-FSC.jpg';
+import Certificado2 from '../assets/Certificado-PEFC.jpg';
 import { useIdioma } from './IdiomaContext';
 
 const Acerca = () => {
