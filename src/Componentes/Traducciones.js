@@ -34,7 +34,7 @@ Es: {
   inicio: {
       seccion1: {
         titulo: "Briquetas de carbón instantáneo",
-        texto: "Estamos emocionados de anunciar nuestras bolsas de briquetas instantáneas de 3kg. La distribución viene por contenedores los cuales contienen 7,500 bolsas cada uno",
+        texto: "Estamos emocionados de anunciar nuestras bolsas de briquetas instantáneas de 3kg, 7,500 bolsas por contenedor.",
       },
       seccion2: {
         titulo: "Una compañía ecológica y renovable",
@@ -192,7 +192,7 @@ En: {
   inicio: {
       seccion1: {
         titulo: "Instant Charcoal Briquettes",
-        texto: "We're excited to announce our 3kg instant briquette bags. Distribution comes in containers containing 7,500 bags each.",
+        texto: "We are excited to announce our 3kg instant briquette bags, 7,500 bags per container.",
       },
       seccion2: {
         titulo: "An Ecological and Renewable Company",
@@ -350,7 +350,7 @@ It: {
     inicio: {
       seccion1: {
         titulo: "Bricchette di carbone istantanee",
-        texto: "Siamo lieti di annunciare i nostri sacchi di bricchette istantanee da 3 kg. La distribuzione avviene in contenitori da 7.500 sacchi ciascuno.",
+        texto: "Siamo lieti di annunciare i nostri sacchi di bricchette istantanee da 3 kg, 7.500 sacchi per contenitore.",
       },
       seccion2: {
         titulo: "Un'azienda ecologica e rinnovabile",

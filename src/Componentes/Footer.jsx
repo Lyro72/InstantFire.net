@@ -47,9 +47,10 @@ const Footer = ({ onNavClick }) => {
         <div className="footer-column">
           <h3 className="footer-title"><img src={Viñeta} />Instant Fire</h3>
           <ul className="footer-contact">
-            <li ><a  href="https://maps.app.goo.gl/m5r97mvvtFEwNnJP7?g_st=ipc" target="_blanck"><FaGlobeEurope /></a><p className="footer-direction">Ctra. N-620 Km. 204, 49440 Cañizal, Zamora. España</p></li>
+            <li><FaPhoneAlt />+39 342 790-9219</li>
             <li><FaPhoneAlt />+34 629 924-088</li>
             <li><FaEnvelope /> info@instantfire.net</li>
+            <li ><a  href="https://maps.app.goo.gl/m5r97mvvtFEwNnJP7?g_st=ipc" target="_blanck"><FaGlobeEurope /></a><p className="footer-direction">Dirección: Carretera Nacional 620 Km. 204 49440 Cañizal. Zamora. España</p></li>
           </ul>
         </div>
 
