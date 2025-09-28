@@ -35,8 +35,9 @@ const Contacto = () => {
         <p>
           <strong>Instant Fire</strong>
         </p>
-        <p>Ctra. N-620 Km. 204, 49440 Cañizal, Zamora. España</p>
+        <p>Carretera Nacional 620 Km. 204 49440 Cañizal. Zamora. España</p>
         <p>{t.telefono.contenido}</p>
+        <p>{t.telefono.contenido2}</p>
         <p>
           <a href="info@instantfire.net">info@instantfire.net</a>
         </p>

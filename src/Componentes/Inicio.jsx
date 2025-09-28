@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import Contacto from './Contacto';
 import Producto from './Producto';
 import Acerca from './Acerca';

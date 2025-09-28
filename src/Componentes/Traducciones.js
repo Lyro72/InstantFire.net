@@ -34,7 +34,7 @@ Es: {
   inicio: {
       seccion1: {
         titulo: "Briquetas de carbón instantáneo",
-        texto: "Estamos emocionados de anunciar nuestras bolsas de briquetas instantáneas de 3kg. La distribución viene por contenedores los cuales contienen 30 tarimas cada una con 250 bolsas. El total de material suma 22.5 toneladas de carbón.",
+        texto: "Estamos emocionados de anunciar nuestras bolsas de briquetas instantáneas de 3kg. La distribución viene por contenedores los cuales contienen 7,500 bolsas cada uno",
       },
       seccion2: {
         titulo: "Una compañía ecológica y renovable",
@@ -133,7 +133,8 @@ Es: {
       },
       telefono: {
         titulo: "Informacion de contacto",
-        contenido: "Oficina: +34 629 924-088 / +34 980 604 279",
+        contenido: "Oficina: +34 629 924-088",
+        contenido2: "Telefono: +39 342 790 9219",
       },
       correoElectronico: {
         titulo: "Correo electrónico",
@@ -191,7 +192,7 @@ En: {
   inicio: {
       seccion1: {
         titulo: "Instant Charcoal Briquettes",
-        texto: "We are excited to announce our 3kg bags of instant briquettes. The shipment comes in containers each containing 30 pallets with 250 bags. The total material sums up to 22.5 tons of charcoal.",
+        texto: "We're excited to announce our 3kg instant briquette bags. Distribution comes in containers containing 7,500 bags each.",
       },
       seccion2: {
         titulo: "An Ecological and Renewable Company",
@@ -290,7 +291,8 @@ En: {
       },
       telefono: {
         titulo: "Contact information",
-        contenido: "Office: +34 629 924-088 / +34 980 604 279",
+        contenido: "Office: +34 629 924-088",
+        contenido2: "Phone: +39 342 790 9219",
       },
       correoElectronico: {
         titulo: "Email",
@@ -348,7 +350,7 @@ It: {
     inicio: {
       seccion1: {
         titulo: "Bricchette di carbone istantanee",
-        texto: "Siamo entusiasti di annunciare i nostri sacchi da 3 kg di bricchette istantanee. La distribuzione avviene tramite container che contengono ciascuno 30 pallet con 250 sacchi. Il materiale totale ammonta a 22,5 tonnellate di carbone.",
+        texto: "Siamo lieti di annunciare i nostri sacchi di bricchette istantanee da 3 kg. La distribuzione avviene in contenitori da 7.500 sacchi ciascuno.",
       },
       seccion2: {
         titulo: "Un'azienda ecologica e rinnovabile",
@@ -447,7 +449,8 @@ It: {
       },
       telefono: {
         titulo: "Informazioni sui contatti",
-        contenido: "ufficio: +34 629 924-088 / +34 980 604 279",
+        contenido: "Ufficio: +34 629 924-088",
+        contenido2: "Telefono: +39 342 790 9219",
       },
       correoElectronico: {
         titulo: "Email",
